@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lineupcreator.demo.AssignMinAndPositionController">
+    <children>
+        <ListView fx:id="obListOfSelectedPlayers" layoutX="14.0" layoutY="14.0" prefHeight="380.0" prefWidth="168.0" />
+        <TextField fx:id="startingPGTF" editable="false" layoutX="271.0" layoutY="92.0" text="" />
+        <Button fx:id="setUnSetPG" layoutX="198.0" layoutY="92.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="startingSGTF" editable="false" layoutX="271.0" layoutY="156.0" text="" />
+        <Button fx:id="setUnSetSG" layoutX="198.0" layoutY="156.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="startingSFTF" editable="false" layoutX="272.0" layoutY="227.0" text="" />
+        <Button fx:id="setUnSetSF" layoutX="199.0" layoutY="227.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="startingPFTF" editable="false" layoutX="272.0" layoutY="299.0" text="" />
+        <Button fx:id="setUnSetPF" layoutX="199.0" layoutY="299.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="startingCTF" editable="false" layoutX="271.0" layoutY="369.0" text="" />
+        <Button fx:id="setUnSetC" layoutX="198.0" layoutY="369.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench1TF" editable="false" layoutX="645.0" layoutY="92.0" text="" />
+        <Button fx:id="setUnSetBench1" layoutX="572.0" layoutY="92.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench2TF" editable="false" layoutX="645.0" layoutY="156.0" text="" />
+        <Button fx:id="setUnSetBench2" layoutX="572.0" layoutY="156.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench3TF" editable="false" layoutX="646.0" layoutY="227.0" text="" />
+        <Button fx:id="setUnSetBench3" layoutX="573.0" layoutY="227.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench4TF" editable="false" layoutX="646.0" layoutY="299.0" text="" />
+        <Button fx:id="setUnSetBench4" layoutX="573.0" layoutY="299.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench5TF" editable="false" layoutX="645.0" layoutY="369.0" text="" />
+        <Button fx:id="setUnSetBench5" layoutX="572.0" layoutY="369.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench6TF" editable="false" layoutX="988.0" layoutY="91.0" text="" />
+        <Button fx:id="setUnSetBench6" layoutX="915.0" layoutY="91.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench7TF" editable="false" layoutX="988.0" layoutY="155.0" text="" />
+        <Button fx:id="setUnSetBench7" layoutX="915.0" layoutY="155.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench8TF" editable="false" layoutX="989.0" layoutY="226.0" text="" />
+        <Button fx:id="setUnSetBench8" layoutX="916.0" layoutY="226.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench9TF" editable="false" layoutX="989.0" layoutY="298.0" text="" />
+        <Button fx:id="setUnSetBench9" layoutX="916.0" layoutY="298.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <TextField fx:id="bench10TF" editable="false" layoutX="988.0" layoutY="368.0" text="" />
+        <Button fx:id="setUnSetBench10" layoutX="915.0" layoutY="368.0" mnemonicParsing="false" onAction="#addPlayerToTextField" prefHeight="25.0" prefWidth="73.0" text="Select" />
+        <Label layoutX="291.0" layoutY="73.0" text="Starting Point Guard" />
+        <Label layoutX="283.0" layoutY="137.0" text="Starting Shooting Guard" />
+        <Label layoutX="287.0" layoutY="210.0" text="Starting Small Forward" />
+        <Label layoutX="289.0" layoutY="280.0" text="Starting Power Forward" />
+        <Label layoutX="306.0" layoutY="350.0" text="Starting Center" />
+        <Label layoutX="303.0" layoutY="10.0" text="Starters">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <Label layoutX="845.0" layoutY="12.0" text="Bench Unit">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <TextField fx:id="startingPGMP" alignment="CENTER" layoutX="440.0" layoutY="92.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="454.0" layoutY="79.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="startingSGMP" alignment="CENTER" layoutX="440.0" layoutY="156.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="454.0" layoutY="143.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="startingSFMP" alignment="CENTER" layoutX="440.0" layoutY="227.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="454.0" layoutY="211.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="startingPFMP" alignment="CENTER" layoutX="440.0" layoutY="296.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="454.0" layoutY="281.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="startingCMP" alignment="CENTER" layoutX="440.0" layoutY="369.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="454.0" layoutY="355.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench1MP" alignment="CENTER" layoutX="816.0" layoutY="93.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="830.0" layoutY="80.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench2MP" alignment="CENTER" layoutX="816.0" layoutY="157.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="830.0" layoutY="144.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench3MP" alignment="CENTER" layoutX="816.0" layoutY="228.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="830.0" layoutY="212.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench4MP" alignment="CENTER" layoutX="816.0" layoutY="297.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="830.0" layoutY="282.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench5MP" alignment="CENTER" layoutX="816.0" layoutY="370.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="830.0" layoutY="356.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench6MP" alignment="CENTER" layoutX="1164.0" layoutY="95.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="1178.0" layoutY="82.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench7MP" alignment="CENTER" layoutX="1164.0" layoutY="159.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="1178.0" layoutY="146.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench8MP" alignment="CENTER" layoutX="1164.0" layoutY="230.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="1178.0" layoutY="214.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench9MP" alignment="CENTER" layoutX="1164.0" layoutY="299.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="1178.0" layoutY="284.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <TextField fx:id="bench10MP" alignment="CENTER" layoutX="1164.0" layoutY="372.0" prefHeight="25.0" prefWidth="45.0" />
+        <Label layoutX="1178.0" layoutY="358.0" prefHeight="17.0" prefWidth="19.0" text="MP" />
+        <Label layoutX="538.0" layoutY="14.0" text="Total minues">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <TextField fx:id="totalTeamMinutes" alignment="CENTER" editable="false" layoutX="683.0" layoutY="18.0" prefHeight="25.0" prefWidth="56.0" text="240">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Button fx:id="setPGMP" layoutX="485.0" layoutY="92.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setSGMP" layoutX="485.0" layoutY="156.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setSFMP" layoutX="484.0" layoutY="227.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setPFMP" layoutX="484.0" layoutY="296.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setCMP" layoutX="485.0" layoutY="369.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench1MP" layoutX="861.0" layoutY="93.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench2MP" layoutX="861.0" layoutY="157.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench3MP" layoutX="861.0" layoutY="228.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench4MP" layoutX="861.0" layoutY="296.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench5MP" layoutX="861.0" layoutY="370.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench6MP" layoutX="1209.0" layoutY="95.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench7MP" layoutX="1209.0" layoutY="159.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench8MP" layoutX="1209.0" layoutY="230.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench9MP" layoutX="1209.0" layoutY="299.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="setBench10MP" layoutX="1209.0" layoutY="372.0" mnemonicParsing="false" onAction="#addUserMinutesToMPField" text="Set" />
+        <Button fx:id="swithcbtn" layoutX="988.0" layoutY="434.0" mnemonicParsing="false" onAction="#switchToLineUpBtn" prefHeight="50.0" prefWidth="257.0" text="Confirm Lineup and Go to Next Page">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="663.0" layoutY="73.0" text="Backup Point Guard" />
+      <Label layoutX="655.0" layoutY="137.0" text="Backup Shooting Guard" />
+      <Label layoutX="659.0" layoutY="210.0" text="Backup Small Forward" />
+      <Label layoutX="661.0" layoutY="280.0" text="Backup Power Forward" />
+      <Label layoutX="678.0" layoutY="350.0" text="Backup Center" />
+      <Label layoutX="1006.0" layoutY="72.0" text="Reserve Point Guard" />
+      <Label layoutX="998.0" layoutY="136.0" text="Reserve Shooting Guard" />
+      <Label layoutX="1002.0" layoutY="209.0" text="Reserve Small Forward" />
+      <Label layoutX="1002.0" layoutY="279.0" text="Reserve Power Forward" />
+      <Label layoutX="1023.0" layoutY="349.0" text="Reserve Center" />
+    </children>
+</AnchorPane>

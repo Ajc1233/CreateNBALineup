@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lineupcreator.demo.ShowPlayersStatsController">
+    <children>
+        <Button layoutX="210.0" layoutY="227.0" mnemonicParsing="false" onAction="#switchToLineUp" prefHeight="43.0" prefWidth="189.0" text="Go Back to Lineup">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+        <Label fx:id="playerLabelName" layoutX="14.0" layoutY="20.0" text="Name: Nickeil Alexander-Walker">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label fx:id="showStatPos" layoutX="440.0" layoutY="20.0" text="Pos: PF">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label fx:id="playerLabelAge" layoutX="14.0" layoutY="44.0" text="Age: 37">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Label fx:id="playerLabelTeam" layoutX="431.0" layoutY="43.0" text="Team: HOU">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <VBox layoutX="42.0" layoutY="95.0" onMouseEntered="#showGPStat" onMouseExited="#hideGPStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatGP" alignment="CENTER" prefHeight="17.0" prefWidth="49.0" text="GP" />
+                <Label fx:id="playerStatsLabelGP" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="137.0" layoutY="156.0" onMouseEntered="#showFTPerStat" onMouseExited="#hideFTPerStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatFTPer" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="67.0" text="FT%" />
+                <Label fx:id="playerStatsLabelFTPer" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="63.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="80.0" layoutY="95.0" onMouseEntered="#showGSStat" onMouseExited="#hideGSStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatGS" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="41.0" text="GS" />
+                <Label fx:id="playerStatsLabelGS" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="118.0" layoutY="95.0" onMouseEntered="#showMPStat" onMouseExited="#hideMPStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatMP" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="42.0" text="MP" />
+                <Label fx:id="playerStatsLabelMP" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="156.0" layoutY="95.0" onMouseEntered="#showFGMStat" onMouseExited="#hideFGMStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatFGM" alignment="CENTER" prefHeight="17.0" prefWidth="81.0" text="FGM" />
+                <Label fx:id="playerStatsLabelFGM" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="194.0" layoutY="95.0" onMouseEntered="#showFGAStat" onMouseExited="#hideFGAStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatFGA" alignment="CENTER" prefHeight="17.0" prefWidth="51.0" text="FGA" />
+                <Label fx:id="playerStatsLabelFGA" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="232.0" layoutY="95.0" onMouseEntered="#showFGPerStat" onMouseExited="#hideFGPerStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatFGPer" alignment="CENTER" prefHeight="17.0" prefWidth="85.0" text="FG%" />
+                <Label fx:id="playerStatsLabelFGPer" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="270.0" layoutY="95.0" onMouseEntered="#show3PMStat" onMouseExited="#hide3PMStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStat3PM" alignment="CENTER" prefHeight="17.0" prefWidth="75.0" text="3PM" />
+                <Label fx:id="playerStatsLabel3PM" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="308.0" layoutY="95.0" onMouseEntered="#show3PAStat" onMouseExited="#hide3PAStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStat3PA" alignment="CENTER" prefHeight="17.0" prefWidth="82.0" text="3PA" />
+                <Label fx:id="playerStatsLabel3PA" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="346.0" layoutY="95.0" onMouseEntered="#show3PPerStat" onMouseExited="#hide3PPerStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStat3PPer" alignment="CENTER" prefHeight="17.0" prefWidth="61.0" text="3P%" />
+                <Label fx:id="playerStatsLabel3PPer" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="384.0" layoutY="95.0" onMouseEntered="#show2PMStat" onMouseExited="#hide2PMStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStat2PM" alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="2PM" />
+                <Label fx:id="playerStatsLabel2PM" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="422.0" layoutY="95.0" onMouseEntered="#show2PAStat" onMouseExited="#hide2PAStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStat2PA" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="2PA" />
+                <Label fx:id="playerStatsLabel2PA" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="460.0" layoutY="95.0" onMouseEntered="#show2PPerStat" onMouseExited="#hide2PPerStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStat2PPer" alignment="CENTER" prefHeight="17.0" prefWidth="64.0" text="2P%" />
+                <Label fx:id="playerStatsLabel2PPer" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="498.0" layoutY="95.0" onMouseEntered="#showEFGStat" onMouseExited="#hideEFGStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatEFG" alignment="CENTER" prefHeight="17.0" prefWidth="74.0" text="eFG%" />
+                <Label fx:id="playerStatsLabelEFGPer" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="63.0" layoutY="156.0" onMouseEntered="#showFTMStat" onMouseExited="#hideFTMStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatFTM" alignment="CENTER" layoutY="156.0" prefHeight="17.0" prefWidth="105.0" text="FTM" />
+                <Label fx:id="playerStatsLabelFTM" alignment="CENTER" layoutY="156.0" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="101.0" layoutY="156.0" onMouseEntered="#showFTAStat" onMouseExited="#hideFTAStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatFTA" alignment="CENTER" prefHeight="17.0" prefWidth="102.0" text="FTA" />
+                <Label fx:id="playerStatsLabelFTA" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="177.0" layoutY="156.0" onMouseEntered="#showORBStat" onMouseExited="#hideORBStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatORB" alignment="CENTER" prefHeight="17.0" prefWidth="49.0" text="ORB" />
+                <Label fx:id="playerStatsLabelORB" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="215.0" layoutY="156.0" onMouseEntered="#showDRBStat" onMouseExited="#hideDRBStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatDRB" alignment="CENTER" prefHeight="17.0" prefWidth="90.0" text="DRB" />
+                <Label fx:id="playerStatsLabelDRB" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="253.0" layoutY="156.0" onMouseEntered="#showTRBStat" onMouseExited="#hideTRBStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatTRB" alignment="CENTER" prefHeight="17.0" prefWidth="86.0" text="TRB" />
+                <Label fx:id="playerStatsLabelTRB" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="291.0" layoutY="156.0" onMouseEntered="#showASTStat" onMouseExited="#hideASTStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatAST" alignment="CENTER" prefHeight="17.0" prefWidth="62.0" text="AST" />
+                <Label fx:id="playerStatsLabelAST" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="329.0" layoutY="156.0" onMouseEntered="#showSTLStat" onMouseExited="#hideSTLStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatSTL" alignment="CENTER" prefHeight="17.0" prefWidth="100.0" text="STL" />
+                <Label fx:id="playerStatsLabelSTL" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="367.0" layoutY="156.0" onMouseEntered="#showBLKStat" onMouseExited="#hideBLKStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatBLK" alignment="CENTER" prefHeight="17.0" prefWidth="106.0" text="BLK" />
+                <Label fx:id="playerStatsLabelBLK" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="405.0" layoutY="156.0" onMouseEntered="#showTOVStat" onMouseExited="#hideTOVStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatTOV" alignment="CENTER" prefHeight="17.0" prefWidth="94.0" text="TOV" />
+                <Label fx:id="playerStatsLabelTOV" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="443.0" layoutY="156.0" onMouseEntered="#showPFStat" onMouseExited="#hidePFStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatPF" alignment="CENTER" prefHeight="17.0" prefWidth="148.0" text="PF" />
+                <Label fx:id="playerStatsLabelPF" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <VBox layoutX="481.0" layoutY="156.0" onMouseEntered="#showPTSStat" onMouseExited="#hidePTSStat" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <Label fx:id="showStatPTS" alignment="CENTER" prefHeight="17.0" prefWidth="83.0" text="PTS" />
+                <Label fx:id="playerStatsLabelPTS" alignment="CENTER" prefHeight="17.0" prefWidth="43.0" text="Label" />
+            </children>
+        </VBox>
+        <Label fx:id="explainGP" layoutX="64.0" layoutY="73.0" text="Number of (G)ames (P)layed last season" visible="false" />
+        <Label fx:id="explainGS" layoutX="102.0" layoutY="73.0" text="Number of (G)ames (S)tarted last season" visible="false" />
+        <Label fx:id="explainMP" layoutX="140.0" layoutY="74.0" text="(M)inutes (P)layed per game" visible="false" />
+        <Label fx:id="explainFGM" layoutX="178.0" layoutY="73.0" text="(F)ield (G)oals (M)ade per game" visible="false" />
+        <Label fx:id="explainFGA" layoutX="216.0" layoutY="74.0" text="(F)ield (G)oals (A)ttempted per game" visible="false" />
+        <Label fx:id="explainFGPer" layoutX="249.0" layoutY="74.0" text="(F)ield (G)oal (P)ercentage of all shots taken" visible="false" />
+        <Label fx:id="explain3PM" layoutX="292.0" layoutY="74.0" text="(3) (P)ointers (M)ade per game" visible="false" />
+        <Label fx:id="explain3PA" layoutX="330.0" layoutY="74.0" text="(3) (P)ointers (A)ttempted per game" visible="false" />
+        <Label fx:id="explain3PPer" layoutX="367.0" layoutY="74.0" text="(3) (P)oint (P)ercentage" visible="false" />
+        <Label fx:id="explain2PM" layoutX="386.0" layoutY="74.0" text="(2) (P)ointers (M)ade per game" visible="false" />
+        <Label fx:id="explain2PA" layoutX="433.0" layoutY="74.0" text="(2) (P)ointers (A)ttempted per game" visible="false" />
+        <Label fx:id="explain2PPer" layoutX="440.0" layoutY="73.0" text="(2) (P)oint (P)ercentage " visible="false" />
+        <Label fx:id="explainEFG" layoutX="7.0" layoutY="74.0" text="(E)ffictive (F)ield (G)oal (P)ercentage of the player when accounting for 3 pointers being worth more than 2 pointers" visible="false" />
+        <Label fx:id="explainFTM" layoutX="76.0" layoutY="198.0" text="(F)ree (T)hrows (M)ade per game" visible="false" />
+        <Label fx:id="explainFTA" layoutX="114.0" layoutY="198.0" text="(F)ree (T)hrows (A)ttempted per game" visible="false" />
+        <Label fx:id="explainFTPer" layoutX="147.0" layoutY="198.0" text="(F)ree (T)hrow (P)ercentage" visible="false" />
+        <Label fx:id="explainORB" layoutX="191.0" layoutY="198.0" text="Number of (O)ffensive (R)e(b)ounds by the player per game" visible="false" />
+        <Label fx:id="explainDRB" layoutX="232.0" layoutY="198.0" text="Number of (D)efensive (R)e(b)ounds by the player per game" visible="false" />
+        <Label fx:id="explainTRB" layoutX="253.0" layoutY="198.0" text="Number of (T)otal (R)e(b)ounds by the player per game" visible="false" />
+        <Label fx:id="explainAST" layoutX="141.0" layoutY="198.0" text="When the player (A)ssists a made basket scored by a teammate " visible="false" />
+        <Label fx:id="explainSTL" layoutX="173.0" layoutY="198.0" text="How many times the player stole the ball from an opposing player" visible="false" />
+        <Label fx:id="explainBLK" layoutX="161.0" layoutY="198.0" text="How many times the player blocked an opposing player's shot per game" visible="false" />
+        <Label fx:id="explainTOV" layoutX="143.0" layoutY="198.0" text="Number of times the player turned the ball over to the opposing team per game" visible="false" />
+        <Label fx:id="explainPF" layoutX="172.0" layoutY="198.0" text="Number of times the player commited a foul per game" visible="false" />
+        <Label fx:id="explainPTS" layoutX="285.0" layoutY="198.0" text="Number of points the player scores per game" visible="false" />
+    </children>
+</AnchorPane>

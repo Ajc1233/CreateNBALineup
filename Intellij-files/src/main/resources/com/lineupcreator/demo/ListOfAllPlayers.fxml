@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="1225.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lineupcreator.demo.ListOfAllPlayersController">
+    <children>
+        <TableView fx:id="NBAPlayers" layoutX="-189.0" layoutY="29.0" prefHeight="311.0" prefWidth="977.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="248.0" AnchorPane.topAnchor="29.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" editable="false" prefWidth="129.0" text="Name" />
+                <TableColumn fx:id="positionColumn" editable="false" prefWidth="57.0" text="Position" />
+                <TableColumn fx:id="ageColumn" editable="false" prefWidth="45.0" text="Age" />
+                <TableColumn fx:id="teamColumn" editable="false" prefWidth="51.0" text="Team" />
+                <TableColumn fx:id="gpColumn" editable="false" prefWidth="40.0" text="GP" />
+                <TableColumn fx:id="gsColumn" editable="false" prefWidth="40.0" text="GS" />
+                <TableColumn fx:id="MPColumn" editable="false" prefWidth="40.0" text="MP" />
+                <TableColumn fx:id="fgmColumn" editable="false" prefWidth="50.0" text="FGM" />
+                <TableColumn fx:id="fgaColumn" editable="false" prefWidth="50.0" text="FGA" />
+                <TableColumn fx:id="fgpColumn" editable="false" prefWidth="50.0" text="FG%" />
+                <TableColumn fx:id="threefgpColumn" editable="false" prefWidth="50.0" text="3PM" />
+                <TableColumn fx:id="threefgaColumn" editable="false" prefWidth="50.0" text="3PA" />
+                <TableColumn fx:id="threeFGPColumn" editable="false" prefWidth="50.0" text="3P%" />
+                <TableColumn fx:id="twoFGMColumn" editable="false" prefWidth="50.0" text="2PM" />
+                <TableColumn fx:id="twoFGAColumn" editable="false" prefWidth="50.0" text="2PA" />
+                <TableColumn fx:id="twoFGPColumn" editable="false" prefWidth="50.0" text="2P%" />
+                <TableColumn fx:id="effFGPColumn" editable="false" prefWidth="50.0" text="eFG%" />
+                <TableColumn fx:id="ftMColumn" editable="false" prefWidth="50.0" text="FTM" />
+                <TableColumn fx:id="ftAColumn" editable="false" prefWidth="50.0" text="FTA" />
+                <TableColumn fx:id="ftPColumn" editable="false" prefWidth="50.0" text="FT%" />
+                <TableColumn fx:id="offRBPColumn" editable="false" prefWidth="50.0" text="ORB" />
+                <TableColumn fx:id="defRBColumn" editable="false" prefWidth="50.0" text="DRB" />
+                <TableColumn fx:id="totRBColumn" editable="false" prefWidth="50.0" text="TRB" />
+                <TableColumn fx:id="asstColumn" editable="false" prefWidth="50.0" text="AST" />
+                <TableColumn fx:id="stlColumn" editable="false" prefWidth="50.0" text="STL" />
+                <TableColumn fx:id="blkColumn" editable="false" prefWidth="50.0" text="BLK" />
+                <TableColumn fx:id="turnOColumn" editable="false" prefWidth="50.0" text="TOV" />
+                <TableColumn fx:id="pfColumn" editable="false" prefWidth="50.0" text="PF" />
+                <TableColumn fx:id="ptsColumn" editable="false" prefWidth="50.0" text="PTS" />
+            </columns>
+        </TableView>
+        <Button layoutX="324.0" layoutY="384.0" mnemonicParsing="false" onAction="#SelectThePlayer" prefHeight="25.0" prefWidth="278.0" text="Select Player" />
+        <TextField fx:id="playerSearch" layoutX="287.0" layoutY="2.0" onKeyPressed="#SearchForPlayerByEnter" prefHeight="25.0" prefWidth="351.0" promptText="Enter the name of the player you want to search for" />
+        <ListView fx:id="currentLineUp" layoutX="994.0" layoutY="29.0" onMouseClicked="#deselectPlayer" prefHeight="355.0" prefWidth="200.0" />
+        <Button fx:id="searchBtn" layoutX="638.0" layoutY="2.0" mnemonicParsing="false" onAction="#SearchForPlayer" text="Search" />
+        <Button layoutX="994.0" layoutY="384.0" mnemonicParsing="false" onAction="#switchToLineUpBtn" prefHeight="25.0" prefWidth="200.0" text="Confirm Team" />
+        <Label fx:id="numOfPlayersSelectedTF" layoutX="1013.0" layoutY="14.0" text="Number of Players Selected: 0" />
+    </children>
+</AnchorPane>

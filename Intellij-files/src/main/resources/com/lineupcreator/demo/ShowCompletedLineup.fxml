@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lineupcreator.demo.ShowCompletedLineup">
+    <children>
+        <TextField fx:id="startingPGTF" editable="false" layoutX="45.0" layoutY="83.0" onMouseClicked="#showPGStats" />
+        <Label layoutX="58.0" layoutY="13.0" prefHeight="27.0" prefWidth="124.0" text="Starting Lineup">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TextField fx:id="startingSGTF" editable="false" layoutX="45.0" layoutY="130.0" onMouseClicked="#showSGStats" />
+        <TextField fx:id="startingSFTF" editable="false" layoutX="45.0" layoutY="177.0" onMouseClicked="#showSFStats" />
+        <TextField fx:id="startingPFTF" editable="false" layoutX="45.0" layoutY="224.0" onMouseClicked="#showPFStats" />
+        <TextField fx:id="startingCTF" editable="false" layoutX="45.0" layoutY="271.0" onMouseClicked="#showCStats" />
+        <Label layoutX="409.0" layoutY="13.0" prefHeight="27.0" prefWidth="58.0" text="Bench">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TextField fx:id="bench1TF" editable="false" layoutX="275.0" layoutY="83.0" onMouseClicked="#showBench1Stats" />
+        <TextField fx:id="bench2TF" editable="false" layoutX="275.0" layoutY="130.0" onMouseClicked="#showBench2Stats" />
+        <TextField fx:id="bench3TF" editable="false" layoutX="275.0" layoutY="177.0" onMouseClicked="#showBench3Stats" />
+        <TextField fx:id="bench4TF" editable="false" layoutX="275.0" layoutY="224.0" onMouseClicked="#showBench4Stats" />
+        <TextField fx:id="bench5TF" editable="false" layoutX="275.0" layoutY="271.0" onMouseClicked="#showBench5Stats" />
+        <TextField fx:id="bench6TF" editable="false" layoutX="443.0" layoutY="82.0" onMouseClicked="#showBench6Stats" />
+        <TextField fx:id="bench7TF" editable="false" layoutX="443.0" layoutY="130.0" onMouseClicked="#showBench7Stats" />
+        <TextField fx:id="bench8TF" editable="false" layoutX="443.0" layoutY="177.0" onMouseClicked="#showBench8Stats" />
+        <TextField fx:id="bench9TF" editable="false" layoutX="443.0" layoutY="224.0" onMouseClicked="#showBench9Stats" />
+        <TextField fx:id="bench10TF" editable="false" layoutX="443.0" layoutY="271.0" onMouseClicked="#showBench10Stats" />
+        <Label layoutX="20.0" layoutY="83.0" prefHeight="25.0" prefWidth="20.0" text="PG" />
+        <Label layoutX="20.0" layoutY="130.0" prefHeight="25.0" prefWidth="20.0" text="SG" />
+        <Label layoutX="20.0" layoutY="176.0" prefHeight="25.0" prefWidth="20.0" text="SF" />
+        <Label layoutX="20.0" layoutY="224.0" prefHeight="25.0" prefWidth="20.0" text="PF" />
+        <Label layoutX="22.0" layoutY="271.0" prefHeight="25.0" prefWidth="20.0" text="C" />
+        <Label layoutX="28.0" layoutY="39.0" prefHeight="40.0" prefWidth="183.0" text="Click the players name to get thier season stats." wrapText="true" />
+        <Label layoutX="699.0" layoutY="13.0" text="Team Stats">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Label fx:id="teamLabelFGM" layoutX="632.0" layoutY="79.0" text="FGM: 0.0" />
+        <Label fx:id="teamLabelFGA" layoutX="712.0" layoutY="79.0" text="FGA: 0.0" />
+        <Label fx:id="teamLabelFGPercent" layoutX="792.0" layoutY="79.0" text="FG%: 0.0" />
+        <Label fx:id="teamLabelThreeMade" layoutX="632.0" layoutY="113.0" text="3PM: 0.0" />
+        <Label fx:id="teamLabelThreeAttempt" layoutX="712.0" layoutY="113.0" text="3PA: 0.0" />
+        <Label fx:id="teamLabelThreePercent" layoutX="792.0" layoutY="113.0" text="3P%: 0.0" />
+        <Label fx:id="teamLabelFTM" layoutX="632.0" layoutY="181.0" text="FTM: 0.0" />
+        <Label fx:id="teamLabelFTA" layoutX="712.0" layoutY="181.0" text="FTA: 0.0" />
+        <Label fx:id="teamLabelFTPercent" layoutX="792.0" layoutY="181.0" text="FT%: 0.0" />
+        <Label fx:id="teamLabelORB" layoutX="632.0" layoutY="215.0" text="ORB: 0.0" />
+        <Label fx:id="teamLabelDRB" layoutX="712.0" layoutY="215.0" text="DRB: 0.0" />
+        <Label fx:id="teamLabelTRB" layoutX="792.0" layoutY="215.0" text="TRB: 0.0" />
+        <Label fx:id="teamLabelAST" layoutX="632.0" layoutY="249.0" text="AST: 0.0" />
+        <Label fx:id="teamLabelSTL" layoutX="712.0" layoutY="249.0" text="STL: 0.0" />
+        <Label fx:id="teamLabelBLK" layoutX="792.0" layoutY="249.0" text="BLK: 0.0" />
+        <Label fx:id="teamLabelTOV" layoutX="632.0" layoutY="283.0" text="TOV: 0.0" />
+        <Label fx:id="teamLabelPF" layoutX="715.0" layoutY="283.0" text="PF: 0.0" />
+        <Label fx:id="teamLabelPTS" layoutX="792.0" layoutY="283.0" text="PTS: 0.0" />
+        <Label fx:id="teamLabelTwoMade" layoutX="632.0" layoutY="147.0" text="2PM: 0.0" />
+        <Label fx:id="teamLabelTwoAttempt" layoutX="712.0" layoutY="147.0" text="2PA: 0.0" />
+        <Label fx:id="teamLabelTwoPercent" layoutX="792.0" layoutY="147.0" text="2P%: 0.0" />
+        <Button layoutX="389.0" layoutY="326.0" mnemonicParsing="false" onAction="#switchToPlrStats" prefHeight="30.0" prefWidth="99.0" text="Get Player Stats" />
+        <Button fx:id="saveFileBtn" layoutX="77.0" layoutY="326.0" mnemonicParsing="false" onAction="#saveToAFile" prefHeight="30.0" prefWidth="86.0" text="Save to a File" />
+        <Button fx:id="exitBtn" layoutX="775.0" layoutY="326.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="25.0" prefWidth="58.0" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button fx:id="restartBtn" layoutX="649.0" layoutY="326.0" mnemonicParsing="false" onAction="#restartProgram" prefHeight="25.0" prefWidth="68.0" text="Restart">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+    </children>
+</AnchorPane>
